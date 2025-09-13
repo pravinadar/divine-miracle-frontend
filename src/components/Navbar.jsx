@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +38,6 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo + Brand - Fixed alignment */}
           <Link
             href="/"
             className="flex items-center space-x-2 group transition-transform hover:scale-105"
@@ -75,7 +74,7 @@ const Navbar = () => {
             ))}
             <button className="relative group px-5 py-2 bg-[#5210AD] text-white font-semibold rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 overflow-hidden">
               <span className="relative z-10">Book Session</span>
-              {/* Glow effect on hover */}
+
               <div className="absolute inset-0 bg-gradient-to-r from-[#5210AD] to-[#6B21A8] opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-[#5210AD]/50 group-hover:shadow-[#5210AD]/80 group-hover:shadow-2xl"></div>
             </button>
           </div>
@@ -107,13 +106,12 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-                <div className="px-4 pt-2">
-                  <button className="relative group w-full bg-[#5210AD] text-white font-semibold py-3 rounded-lg shadow-lg transition-all duration-300 overflow-hidden">
-                    <span className="relative z-10">Book Session</span>
-                    {/* Glow effect on hover */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#5210AD] to-[#6B21A8] opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-[#5210AD]/50 group-hover:shadow-[#5210AD]/80 group-hover:shadow-2xl"></div>
-                  </button>
-                </div>
+              <div className="px-4 pt-2">
+                <button className="relative group w-full bg-[#5210AD] text-white font-semibold py-3 rounded-lg shadow-lg transition-all duration-300 overflow-hidden">
+                  <span className="relative z-10">Book Session</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#5210AD] to-[#6B21A8] opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-[#5210AD]/50 group-hover:shadow-[#5210AD]/80 group-hover:shadow-2xl"></div>
+                </button>
+              </div>
             </div>
           </div>
         )}
