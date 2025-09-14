@@ -14,7 +14,7 @@ const HeroSection = () => {
           priority
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/65"></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-20">
@@ -70,7 +70,7 @@ const HeroSection = () => {
                 alt="Tarot Circle"
                 fill
                 className="object-contain animate-spin drop-shadow-2xl transition-all duration-300"
-                style={{ animationDuration: '20s' }}
+                style={{ animationDuration: "20s" }}
                 priority
               />
               {/* Subtle glow effect around the spinning image */}
