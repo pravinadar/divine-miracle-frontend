@@ -6,7 +6,7 @@ import Services from "@/components/Services";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <Services />
       <main className="min-h-screen flex items-center justify-center bg-base-200">

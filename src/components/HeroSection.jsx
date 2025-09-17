@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -52,6 +53,7 @@ const HeroSection = () => {
               </button>
 
               {/* Explore Services Button */}
+              <Link href="/services">
               <button className="relative group px-8 py-4 bg-transparent border-2 border-yellow-400 text-yellow-400 font-semibold text-lg rounded-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
                 <span className="relative z-10 group-hover:text-yellow-300 transition-colors duration-300">
                   Explore Services
@@ -59,6 +61,7 @@ const HeroSection = () => {
                 {/* Hover effect */}
                 <div className="absolute inset-0 bg-yellow-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
+              </Link>
             </div>
           </div>
 
