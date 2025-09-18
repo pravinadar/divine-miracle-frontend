@@ -35,7 +35,7 @@ const Navbar = () => {
       //     ? "bg-[#0a0a0f] backdrop-blur-md bg-opacity-95 border-b border-[#222] shadow-xl"
       //     : "bg-gradient-to-b from-[#111117] to-[#0d0d12] border-b border-[#222]"
       // }`}
-      className={` backdrop-blur-sm sticky top-0 left-0 right-0 z-50 transition-all duration-300`}>
+      className={` backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300`}>
 
 
       <div className="container mx-auto px-4">
@@ -75,10 +75,10 @@ const Navbar = () => {
             ))}
             <Link
               href="/appointment"
-              className="relative group px-5 py-2 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 text-slate-900 font-semibold rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 overflow-hidden"
+              className="bg-gradient-to-r from-[#d4af37] via-[#ffd700] to-[#b8860b] text-[#3a0d1e] font-semibold py-3 px-5 rounded-lg hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300"
             >
               <span className="relative z-10">Book Session</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#ffd700] via-[#f6e27a] to-[#b8860b] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-r from-[#ffd700] via-[#f6e27a] to-[#b8860b] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div> */}
             </Link>
 
           </div>

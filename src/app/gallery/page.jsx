@@ -108,7 +108,7 @@ const SacredGallery = () => {
   return (
     <div className="bg-gradient-to-br from-[#1a0009] via-[#2a0015] to-[#1a0009] min-h-screen">
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto text-center pt-16 pb-12 px-4">
+      <div className="max-w-7xl mx-auto text-center pt-16 pb-12 px-4 mt-5">
         <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 text-transparent bg-clip-text mb-3 pb-5">
           Sacred Gallery
         </h1>
@@ -118,7 +118,7 @@ const SacredGallery = () => {
       </div>
 
       {/* Filter Buttons */}
-      <div className="max-w-[80%] mx-auto px-4 mb-12">
+      <div className="max-w-[90%] mx-auto px-4 mb-12">
         <div className="flex flex-wrap justify-center gap-3">
           {filterCategories.map(({ category, label }) => (
             <FilterButton

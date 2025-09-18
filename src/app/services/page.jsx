@@ -4,7 +4,7 @@ import React from 'react'
 const Services = () => {
   return (
     <div>
-      <div className="max-w-3xl mx-auto text-center mb-5 mt-7">
+      <div className="max-w-3xl mx-auto text-center mb-5 mt-20">
         <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-400 text-transparent bg-clip-text mb-4">
           Sacred Services
         </h1>

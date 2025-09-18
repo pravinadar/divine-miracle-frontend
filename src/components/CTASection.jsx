@@ -27,9 +27,9 @@ const CTASection = () => {
       className="relative py-20 md:py-28 bg-gradient-to-br from-[#1a000f] via-[#38001d] to-[#1a000f] text-[#FEF2CD] overflow-hidden"
     >
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* <div className="absolute inset-0 overflow-hidden"> */}
         {/* Subtle floating elements */}
-        {[...Array(8)].map((_, i) => (
+        {/* {[...Array(8)].map((_, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-[#FFD700] rounded-full opacity-20"
@@ -40,7 +40,7 @@ const CTASection = () => {
             }}
           ></div>
         ))}
-      </div>
+      </div> */}
 
       {/* Main Glowing Blobs - More subtle */}
       <div className="absolute top-0 -left-1/4 w-96 h-96 bg-yellow-400/10 rounded-full filter blur-3xl opacity-30 animate-blob"></div>
